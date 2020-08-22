@@ -120,7 +120,7 @@ img.references {
 }
 
 div.references {
-  font-weight: 200;
+  font-weight: 300;
 }
 
 div.description {
@@ -140,6 +140,23 @@ div.description {
 		padding: 2px;
 }
 
+.content a{
+		background: yellow;
+		padding: 2px;
+}
+
+.content a:hover{
+		color: pink;
+		background: yellow;
+		padding: 2px;
+}
+
+.content a:active{
+		color: yellow;
+		background: yellow;
+		padding: 2px;
+}
+
 li.references a {
 		background: blue;
     color: white;
@@ -151,6 +168,17 @@ ol a.references:hover {
 		background: blue;
 		padding: 2px;
 }
+
+.image a{
+		background: none;
+		padding: 2px;
+}
+
+.content a:hover{
+
+}
+
+
 /*
 li.calendar {
   display: block;
@@ -235,6 +263,8 @@ button#randomizer:active {
 	/* background: yellow; */
 	/* box-shadow: 0 0 20px 24px yellow; */
 }
+
+
 
 h1#chosenOne {
 	position: fixed;
@@ -358,6 +388,7 @@ margin-top: 28px;
 padding: 14px;
 overflow: scroll;
 background: #f1f1f1;
+line-height: 1.33em;
 /* position: relative; */
 }
 
