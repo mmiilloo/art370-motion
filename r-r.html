@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>/MOTION</title>
+    <!-- <link media="print" href="https://mmiilloo.github.io/interactive/assets/css/print.css"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="assets/css/main.css" type="text/css" />
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+</style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+
+  <div class="nav">
+  <div class="nav-top">
+    <a href="index.html">Art 370:<br>
+       Motion Design&ThinSpace;/&ThinSpace;2020</a><br>
+    <hr>
+    Thursdays<br>
+    8:25 AM, room 209<br>
+    &#8594; <a href="https://yale.zoom.us/j/3201899374" target="_blank">zoom</a> &#8592;
+    <hr>
+  <!-- <span class="student"><a class="samantha" href="samantha.html">Samantha Callahan</a></span><br>
+  <a class="andrew" href="andrew.html">Andrew Connors</a><br>
+  <a class="siri" href="siri.html">Siri Lee</a><br>
+  <a class="neeta" href="neeta.html">Neeta Patel</a><br>
+  <a class="lester" href="lester.html">Lester Rosso</a><br>
+  <a class="junyi" href="junyi.html">Junyi Shi</a><br>
+  <a class="yifan" href="yifan.html">Yifan Wang</a><br> -->
+
+  <div id="container">
+
+        <h1 id="chosenOne">
+          &nbsp;
+          <span></span>
+        </h1>
+
+        <ul class="flush" id="roster">
+
+          <li>
+            <a class="firstColor" href="001.html" target="_blank">Andrew</a>
+          </li>
+
+          <li>
+            <a class="secondColor" href="002.html" target="_blank">Anne</a>
+          </li>
+
+          <li>
+            <a class="thirdColor" href="003.html" target="_blank">Junyi</a>
+          </li>
+
+          <li>
+          <a class="fourthColor" href="004.html" target="_blank">Kaloyen</a>
+          </li>
+
+          <li>
+            <a class="fifthColor" href="005.html" target="_blank">Lester</a>
+          </li>
+
+          <li>
+            <a class="sixthColor" href="006.html" target="_blank">Loren</a>
+          </li>
+
+          <!-- <li>
+            <a class="seventhColor" href="007.html" target="_blank">Melissa</a>
+          </li> -->
+
+          <li>
+            <a class="eighthColor" href="007.html" target="_blank">Samantha</a>
+          </li>
+
+          <li>
+            <a class="ninthColor" href="008.html" target="_blank">Yifan</a>
+          </li>
+
+          <li>
+            <a class="tenthColor" href="009.html" target="_blank">Zachary</a>
+          </li>
+        </ul>
+
+        <hr>
+
+
+      <!-- <button id="randomizer">×</button> -->
+</div>
+</div>
+
+<div class="nav-bottom">
+  <hr>
+  <ul class="flush">
+
+
+    <li>
+      <a href="calendar.html">calendar</a>
+    </li>
+
+    <li>
+      <a href="syllabus.html">syllabus</a>
+    </li>
+
+    <li>
+      <div class="active">readings & references</div>
+    </li>
+
+    <li>
+      <a href="about.html">about</a><br>
+    </li>
+  </ul>
+  <hr>
+</div>
+</div>
+
+<!--
+<div class="calendar"> -->
+<!-- <h2>Readings & References</h2>
+ -->
+
+<div class="content">
+  <div class="references">
+<h2>Readings & References</h2>
+<ol class="refernces">
+  <li>HOW TO SET UP VIMEO ACCOUNT:<br><br><br>
+    <img src="assets/images/test.png" alt="vimeo" class="references"><br>
+    <div class="description">some sort of description</div>
+  </li><br>
+  <li>
+    AfterEffects <a href="https://www.linkedin.com/learning/after-effects-2020-essential-training-the-basics/amazing-things-happen-in-adobe-after-effects?u=2110361" target="_blank">lesson on Linkedin Learning</a>
+  </li>
+  <li>
+  </li>
+  <li>
+  </li>
+  <li>
+  </li>
+</ol>
+
+</div>
+</div>
+
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById('myModal');
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // Get all images and insert the clicked image inside the modal
+        // Get the content of the image description and insert it inside the modal image caption
+        var images = document.getElementsByTagName('img');
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        var i;
+        for (i = 0; i < images.length; i++) {
+            images[i].onclick = function() {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                modalImg.alt = this.alt;
+                captionText.innerHTML = this.nextElementSibling.innerHTML;
+            }
+        }
+    </script>
+
+
+
+
+</body></html>
