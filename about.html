@@ -29,6 +29,8 @@
     <hr>
     Thursdays<br>
     8:25 AM, room 209<br>
+    <div class="time">
+      (right now it’s <div id="time"></div> in New Haven)</div><br>
     &#8594; <a href="https://yale.zoom.us/j/3201899374" target="_blank">zoom</a> &#8592;
     <hr>
 
@@ -135,12 +137,24 @@ This website is a work in progess, as is everything.</p>
 <script src="assets/js/jquery.min.js"></script>
 
 <script src="assets/js/index.js"></script>
-
-    </script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.1/moment.min.js"></script>
 
 
+<script>
 
+function realtime() {
 
+  let time = moment().format('h:mm:ss a');
+  document.getElementById('time').innerHTML = time;
 
-</body></html>
+  setInterval(() => {
+    time = moment().format('h:mm:ss a');
+    document.getElementById('time').innerHTML = time;
+  }, 1000)
+}
+
+realtime();
+
+</script>
+</body>
+</html>

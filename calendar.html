@@ -29,6 +29,8 @@
     <hr>
     Thursdays<br>
     8:25 AM, room 209<br>
+    <div class="time">
+      (right now it’s <div id="time"></div> in New Haven)</div><br>
     &#8594; <a href="https://yale.zoom.us/j/3201899374" target="_blank">zoom</a> &#8592;
     <hr>
 
@@ -1127,13 +1129,14 @@
           TMS Intro, book demo
         </li>
         <li>
-          Vimeo
+          Project 1 handout: <em>Affect</em> (PDF <a href="assets/pdf/art370_project-01_handout.pdf" target="_blank">here</a>. Alternatively: Google Doc available <a href="https://docs.google.com/document/d/16PzrPi-jqx35T7-5kHoWlRRqusr-Y9qV3T2XpJj_Ajw/edit?usp=sharing" target="_blank">here</a>)
         </li>
       </ul>
   </li>
   <hr>
   <li>
-    <h2>Sep 10</h2>in preparation for this week:
+    <h2>Sep 10</h2>
+      <!-- in preparation for this week:
               <ul>
                 <li>
                   upload links Vimeo to the <a href="https://docs.google.com/document/d/1O-3eJ5jnl6-KUI2gHzgFCmbEasUeI51zp4nb8xZsl_Y/edit?usp=sharing" target="_blank">Week 2 document</a>
@@ -1154,7 +1157,7 @@
                           <li>
                             introduction to AfterEffects
                           </li>
-                        </ul>
+                        </ul> -->
   </li>
   <hr>
 
@@ -1239,8 +1242,25 @@
             }
         }
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.1/moment.min.js"></script>
 
 
+    <script>
 
+    function realtime() {
 
-</body></html>
+      let time = moment().format('h:mm:ss a');
+      document.getElementById('time').innerHTML = time;
+
+      setInterval(() => {
+        time = moment().format('h:mm:ss a');
+        document.getElementById('time').innerHTML = time;
+      }, 1000)
+    }
+
+    realtime();
+
+    </script>
+
+</body>
+</html>

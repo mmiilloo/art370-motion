@@ -361,6 +361,16 @@ background: #f1f1f1;
 /* position: relative; */
 }
 
+div.time {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  display: inline;
+}
+
+#time {
+  display: inline;
+}
+
 
 div.individual {
     /* transform: rotate(270deg); */
