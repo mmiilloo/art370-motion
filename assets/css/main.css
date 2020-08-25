@@ -54,6 +54,15 @@ box-shadow: 5px 10px #888888;
   height: auto;
 }
 
+.blank-bg {
+  background: black;
+  width: 640px;
+  height: 360px;
+  vertical-align: middle;
+  text-align: center;
+  color: #e3e3e3;
+}
+
 .overlay {
   position: absolute;
   bottom: 0;
