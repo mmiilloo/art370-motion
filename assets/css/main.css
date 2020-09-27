@@ -352,6 +352,13 @@ p.indent {
   /* padding-left: 100px; */
 }
 
+p.video-title {
+margin-top: -0px;
+padding-bottom: 30px;
+}
+
+
+
 div.nav {
     /* transform: rotate(270deg); */
     /* color: black; */
@@ -414,7 +421,7 @@ div.time {
 
 div.individual {
     /* transform: rotate(270deg); */
-  position: fixed;
+  /* position: fixed; */
 width: 300px;
 /* font-size: 25px; */
 margin-left: 330px;
